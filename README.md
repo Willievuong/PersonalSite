@@ -1,3 +1,3 @@
 # PersonalSite
 
-My own Personal Site 
+This is where I put my prototype of my website before deployment! 
