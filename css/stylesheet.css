@@ -1,0 +1,38 @@
+.center{
+	background-image: url("../img/me.JPG");
+	text-align: center;
+	vertical-align: middle;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.container-fluid{
+	padding-left: 0%;
+	padding right: 0%;
+}
+
+@media (min-width: 576px) { 
+.center{
+	height: 200px;
+}
+
+}
+
+@media (min-width: 768px) { 
+.center{
+	height: 200px;
+	}
+}
+
+@media (min-width: 992px) { 
+.center{
+	height: 200px;
+	}
+}
+
+@media (min-width: 1200px) { 
+.center{
+	height: 200px;
+	}
+}
