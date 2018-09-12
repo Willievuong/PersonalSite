@@ -5,11 +5,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 70px;
@@ -25,15 +20,25 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Resume-Button{
+	background-color: #4169E1;
+	color:white;
+	font-size: 1.0em;
+	padding: 15px 32px;
+	border: none; 
 }
 
-.Resume-Button{
-	background-color: #4CAF50;
-	padding: 15px 32px;
+.site-footer{
+	background-color: #222;
+  	height: 35px;
+  	padding: 10px;
+	position: fixed;
 }
+
+.site-footer-text{
+	color: white;
+}
+
 
 /*---------------------------*/
 /* Old CSS From Last Website */

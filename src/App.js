@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HeaderPage from './components/HeaderPage'
+import FooterPage from './components/FooterPage'
+import IntroPage from './components/IntroPage'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Hi, Hello, Welcome!</h1>
-        </header>
-        <p className="App-intro">
-          The site is under construction, check back in a few days for updates, meanwhile, here's my resume!
-        </p>
-        {/* TODO: Handle Button OnClick */}
-        <button className="Resume-Button" href="https://1drv.ms/f/s!AhgK9ZtBhYlypqJaL95HYc1zRQcBOQ"> 
-          Resume
-        </button>
+        <HeaderPage/> 
+        <IntroPage/>
       </div>
     );
   
