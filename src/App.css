@@ -2,12 +2,14 @@
 /* Current CSS From This Website */
 /*-------------------------------*/
 .App {
-  text-align: center;
+	text-align: center;
+	width: 100%;
 }
 
+/* Header CSS */
 .App-header {
-  background-color: #222;
-  height: 70px;
+	background-color: #222;
+  height: 50px;
   padding: 20px;
   color: white;
 }
@@ -16,8 +18,14 @@
   font-size: 1.5em;
 }
 
+/* Body CSS */
 .App-intro {
   font-size: large;
+}
+
+.IntroPage{
+	padding: 20px;
+
 }
 
 .Resume-Button{
@@ -28,10 +36,24 @@
 	border: none; 
 }
 
+.Resume-Button:hover{
+	background-color: white;
+}
+
+/* Phantom CSS */
+
+.phantom{
+	display: block;
+  padding: 20px;
+  height: 50px;
+  width: 100%;
+}
+
+/* Footer CSS */
 .site-footer{
+	width: 100%;
 	background-color: #222;
-  	height: 35px;
-  	padding: 10px;
+	padding: .25em;
 	position: fixed;
 }
 
@@ -39,18 +61,27 @@
 	color: white;
 }
 
-
-/*---------------------------*/
-/* Old CSS From Last Website */
-/*---------------------------*/
-
+.icon{
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	padding: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
 
 /* Links */ 
 a,
 a:focus,
 a:hover{
+	text-decoration: none;
 	color: #fff;
 }
+
+/*---------------------------*/
+/* Old CSS From Last Website */
+/*---------------------------*/
 
 /*Buttons*/ 
 .btn-default,

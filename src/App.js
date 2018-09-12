@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HeaderPage from './components/HeaderPage'
-import FooterPage from './components/FooterPage'
 import IntroPage from './components/IntroPage'
+import FooterPage from './components/FooterPage'
+import PhantomPage from './components/PhantomPage'
 
+/*------------------------- */
+/* Main Driver of the app   */
+/*------------------------- */
 class App extends Component {
   render() {
     return (
       <div className="App">
         <HeaderPage/> 
         <IntroPage/>
+        <PhantomPage/>
+        <FooterPage/>
       </div>
     );
   
