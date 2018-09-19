@@ -16,6 +16,7 @@ const App = () => (
       <Header/>
       <Main/>
     </div> 
+    {/* <PhantomPage/> */}
     <Footer/>
   </div>
 )

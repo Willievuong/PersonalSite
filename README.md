@@ -3,7 +3,7 @@ www.williamvuong.net
 
 Try It
 --
-Live Website: https://personalsite-35f77.firebaseapp.com/
+Live Website: https://www.williamvuong.net/
 
 Description 
 --
@@ -17,4 +17,4 @@ Run It
 
 Credits
 -- 
-Created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+Created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md), [Type.js](https://mattboldt.com/demos/typed-js/).

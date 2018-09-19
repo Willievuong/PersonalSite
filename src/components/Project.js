@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const Project = () => (
-  <div> 
+  <div className="Project"> 
 
   </div>
 )
