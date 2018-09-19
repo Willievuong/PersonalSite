@@ -1,47 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import './App.css';
-import HeaderPage from './components/HeaderPage'
-import IntroPage from './components/IntroPage'
-import FooterPage from './components/FooterPage'
+import Header from './components/Header'
+import Main from './components/Main'
 import PhantomPage from './components/PhantomPage'
+import Footer from './components/Footer'
 
 /*------------------------- */
 /* Main Driver of the app   */
 /*------------------------- */
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <HeaderPage/> 
-        <IntroPage/>
-        <PhantomPage/>
-        <FooterPage/>
-      </div>
-    );
-  
-   /*------------------------- */
-   /* Old CSS From Former Site */ 
-   /* TODO: Figure out which are from Bootstrap component */
-   /*--------------------------*/
-  //  return(
-  //   <div className="site-wrapper">
-  //   <div className="site-wrapper-inner">
-  //     <div className="cover-container">
-  //       <div className="masthead clearfix">
-  //         <div className="inner">
-  //             <h4 className="masthead-brand">Willievuong</h4>
-  //         </div>
-  //       </div>
-  //         <div className="inner cover">
-  //           <h1 className="cover-heading">Hey there!</h1>
-  //             <p className="lead">The site is under construction, check back in a few days for updates, meanwhile, here's my resume!</p>
-  //             <button href="https://1drv.ms/f/s!AhgK9ZtBhYlypqJaL95HYc1zRQcBOQ">Resume</button>
-  //         </div>
-  //         </div>
-  //     </div>
-  //   </div>
-  //  );  
-  }
-}
+
+const App = () => (
+  <div>
+    <Header/>
+    <Main/> 
+    <PhantomPage/>
+    <Footer/>
+  </div>
+)
 
 export default App;
