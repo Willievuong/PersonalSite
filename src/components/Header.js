@@ -5,13 +5,11 @@ import '../App.css';
 /* Header and Navigation Bar */
 const HeaderPage = () => (
   <header className="App-header">
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/project">Project</Link></li>
-      </ul>
-    </nav>
+    <ul className="navbar">
+      <li><Link to="/project" className="navButton">Project</Link></li>
+      <li><Link to="/about" className="navButton">&nbsp;About&nbsp;</Link></li>
+      <li><Link to="/" className="navButton">&nbsp;&nbsp;Home&nbsp;&nbsp;</Link></li>
+    </ul>
   </header>
 )
 
