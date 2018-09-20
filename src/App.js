@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter } from 'react-router-dom'
 import './App.css';
 import Header from './components/Header'
 import Main from './components/Main'
-import PhantomPage from './components/PhantomPage'
-import Footer from './components/Footer'
-
 /*------------------------- */
 /* Main Driver of the app   */
 /*------------------------- */
@@ -17,14 +14,12 @@ class App extends Component{
 
   render(){
     return(
-      <div class="Site">
-          <div className="Site-content"> 
+      <BrowserRouter>
+        <div class="Site">
             <Header/>
             <Main/>
-          </div> 
-          {/* <PhantomPage/> */}
-          <Footer/>
         </div>
+      </BrowserRouter>
     )
   }
 }

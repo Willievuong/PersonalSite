@@ -1,14 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 import App from './App';
+import Footer from './components/Footer'
 
-render((
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-), document.getElementById('root'));
+render([<App key="1" />, <Footer key="2" />], document.getElementById('root'));
 registerServiceWorker();
