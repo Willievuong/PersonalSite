@@ -2,19 +2,23 @@ import React from 'react';
 import '../App.css';
 import Typed from 'typed.js';
 
-const { strings } = "Hello there, what's going on";
+const options = {
+  strings: ["Hi", "Hey", "Hello!", "The website is currently under construction,", "check back in a few days!" ],
+  typeSpeed: 50,
+  backSpeed: 50, 
+}
 
 class TypedReactDemo extends React.Component {
+  constructor(){
+    super(); 
+  }
+
   componentDidMount() {
   	// If you want to pass more options as props, simply add
     // your desired props to this destructuring assignment.
   
     // You can pass other options here, such as typing speed, back speed, etc.
-    const options = {
-    	strings: strings,
-      typeSpeed: 50,
-      backSpeed: 50
-    };
+
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options);
   }
@@ -27,14 +31,11 @@ class TypedReactDemo extends React.Component {
 
   render() {
     return (
-      <div className="wrap">
-        <h1>Typed.js</h1>
-        <div className="type-wrap">
+      <div> 
           <span
-            style={{ whiteSpace: 'pre' }}
-            ref={(el) => { this.el = el; }}
+              style={{ whiteSpace: 'pre' }}
+              ref={(el) => { this.el = el; }}
           />
-        </div>
       </div>
     );
   }
