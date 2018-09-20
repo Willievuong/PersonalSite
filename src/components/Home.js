@@ -7,7 +7,7 @@ import Typing from './Typing'
 class Home extends Component{
   render(){
     return(
-      <div class="IntroPage"> 
+      <div className="IntroPage"> 
         <div className="Intro-Type">
           <Typing/>
         </div>
@@ -20,13 +20,5 @@ class Home extends Component{
     )
   }
 }
-
-/*TODO: Add Typing in Functionality */
-// var options = {
-//   strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-//   typeSpeed: 40
-// }
-
-// var type = new Typed(".element", options);
 
 export default Home;

@@ -14,12 +14,10 @@ class FooterPage extends Component{
     render(){
         return(
             <div className="site-footer">
-                <p class="site-footer-text"> 
                     <a href="https://github.com/willievuong"><img alt="Github" className="icon" src={github}/></a>
                     <a href="mailto:wpvuong@ucsd.edu"><img alt="Mail" className="icon" src={mail}/></a>
                     <a href="https://linkedin.com/in/vuongwilliam"><img alt="Linkedin" className="icon" src={linkedin}/></a>
                     <a href="https://hackerrank.com/willievuong"><img alt="Hackerrank" className="icon" src={hackerrank}/></a>
-                </p>
             </div>
         )
     }

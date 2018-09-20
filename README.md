@@ -18,3 +18,9 @@ Run It
 Credits
 -- 
 Created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md), [Type.js](https://mattboldt.com/demos/typed-js/).
+
+Planned Features
+--
+0. OAuth (just for me tho)
+1. Adding Projects via Admin Panels  
+2. Blog
