@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { slide as Menu } from 'react-burger-menu'
 import BurgerMenu from 'react-burger-menu';
-import classNames from 'classnames';
 import '../App.css';
 
 /*TODO: Look over this code */
@@ -55,9 +53,9 @@ class HeaderPage extends Component{
 
     items = [
       <ul>
-      <li><Link to="/" key="0" className="fa fa-fw navButton">Home</Link></li>
-      <li><Link to="/about" key="1" className="fa fa-fw navButton">About</Link></li>
-      <li><Link to="/project" key="2" className="fa fa-fw navButton">Project</Link></li>
+      <li><Link to="/" key="0" className="fa fa-fw fa-home navButton">Home</Link></li>
+      <li><Link to="/about" key="1" className="fa fa-fw fa-book navButton">About</Link></li>
+      <li><Link to="/project" key="2" className="fa fa-fw fa-github-square navButton">Project</Link></li>
       </ul>
     ];
 

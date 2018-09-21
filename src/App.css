@@ -29,6 +29,7 @@ a:hover{
 
 /* Header CSS */
 .App-header {
+	position: fixed;
 	background-color: #222;
 	width: 100%;
 	padding-bottom: 6em;
@@ -130,6 +131,10 @@ main{
 	flex: 1 0 auto;
 }
 
+.Site-body{
+	padding-top: 7em;
+}
+
 .site-footer{
 	flex-shrink: 0;
 	text-align: center;
@@ -161,10 +166,10 @@ main{
 }
 
 .About-title{
-	padding: .25em; 
 	font-size: 1.5em;
 	border-bottom: solid;
 	border-color: white;
+	padding-bottom: 2.25em;
 }
 
 .About-descriptor{
@@ -173,8 +178,30 @@ main{
 }
 
 .About-text{
+	color: white;
 	padding: 1em;
 }
+
+.text{
+	color:white;
+	text-decoration:  underline;
+}
+
+.alignleft {
+  float: left;
+  width:33.33333%;
+  text-align:left;
+}
+.aligncenter {
+  float: left;
+  width:33.33333%;
+  text-align:center;
+}
+.alignright {
+ float: left;
+ width:33.33333%;
+ text-align:right;
+}​
 
 /* Project Page */
 .Project-List{

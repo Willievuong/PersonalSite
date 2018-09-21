@@ -5,6 +5,7 @@ import Home from './Home'
 import About from './About'
 import Project from './Project'
 import NotFound from './404'
+import '../App.css';
 
 /* Handling the routing of the website */
 /* i.e. localhost:3000/about */
@@ -16,7 +17,7 @@ class Main extends Component{
   
   render(){
     return(
-      <main id="page-wrap">
+      <main className="Site-body">
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
