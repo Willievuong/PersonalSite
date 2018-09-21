@@ -62,7 +62,7 @@ a:hover{
 }
 
 /* Responsiveness */
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
 	.navbar a:not(:first-child) {display: none;}
 	.navbar a.icon {
     float: right;
@@ -82,7 +82,7 @@ a:hover{
 		display: block;
 		text-align: left; 
 	}
-}
+} */
 
 /* Body CSS */
 main{
