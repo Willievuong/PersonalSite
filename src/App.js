@@ -16,8 +16,10 @@ class App extends Component{
   render(){
     return(
       <BrowserRouter>
-        <div className="Site">
+        <div className="Site" id="outer-container">
+          <header className="App-header">
             <Header/>
+          </header>
             <Main/>
         </div>
       </BrowserRouter>

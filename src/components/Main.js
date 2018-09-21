@@ -16,7 +16,7 @@ class Main extends Component{
   
   render(){
     return(
-      <main>
+      <main id="page-wrap">
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>

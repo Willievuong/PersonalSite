@@ -31,30 +31,28 @@ a:hover{
 .App-header {
 	background-color: #222;
 	width: 100%;
-	padding-top: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 6em;
 	overflow: hidden;
 }
 
-.navbar ul{
+ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.navbar li{
+/* .navbar li{
 	display: inline;
 	float: right;
-	padding-right: 2em;
-}
+} */
 
 .navButton{
 	color: white;
-	background-color: #32cd32;
+	font-family: 'LiberationMonoRegular'; 
+	width: 100%;
 	padding-top: 1em;
-	padding-left: 1em; 
+	padding-right: .70em;
 	padding-bottom: 1em;
-	padding-right: 1em;
 }
 
 .navButton:hover{

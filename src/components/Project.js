@@ -16,6 +16,13 @@ class Project extends Component{
             This part of the is under construction, check back in a few days for updates.
           </p>
           </div>
+          
+          <ul className="Project-List">
+            <li className="Project-Item">
+                <div className="Project-Img"></div>
+                <div className="Project-Text"></div> 
+            </li>
+          </ul>
       </div>
     )
   }

@@ -1,13 +1,49 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
+import BurgerMenu from 'react-burger-menu';
+import classNames from 'classnames';
 import '../App.css';
+
+/*TODO: Look over this code */
+class MenuWrap extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      hidden: false
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+
+  }
+
+  show() {
+    this.setState({hidden : false});
+  }
+
+  render() {
+    let style;
+
+    if (this.state.hidden) {
+      style = {display: 'none'};
+    }
+
+    return (
+      <div style={style} className={this.props.side}>
+        {this.props.children}
+      </div>
+    );
+  }
+}
 
 /* Header and Navigation Bar */
 class HeaderPage extends Component{
-//const HeaderPage = () => (
   constructor(){
     super(); 
+    this.state = {
+      currentMenu: 'slide'
+    }
   }
 
   // showSettings(events){
@@ -18,25 +54,77 @@ class HeaderPage extends Component{
     let items; 
 
     items = [
-      <li className="navButton"><Link to="/project">Project</Link></li>,
-      <li className="navButton"><Link to="/about">&nbsp;About&nbsp;</Link></li>,
-      <li className="navButton"><Link to="/">&nbsp;&nbsp;Home&nbsp;&nbsp;</Link></li>
+      <ul>
+      <li><Link to="/" key="0" className="fa fa-fw navButton">Home</Link></li>
+      <li><Link to="/about" key="1" className="fa fa-fw navButton">About</Link></li>
+      <li><Link to="/project" key="2" className="fa fa-fw navButton">Project</Link></li>
+      </ul>
     ];
+
+    return items;
+  }
+
+  getMenu(){
+    const Menu = BurgerMenu[this.state.currentMenu];
+    const items = this.getNavBar();
+
+    let jsx = (
+      <MenuWrap wait={20} side={this.state.side}>
+        <Menu id={this.state.currentMenu} styles={styler}>
+          {items}
+        </Menu>
+      </MenuWrap>
+    );
+
+    return jsx;
   }
 
   render(){
     return(
-    //<Menu> 
-      <header className="App-header">
-        <ul className="navbar">
-          <li><Link to="/project" className="navButton">Project</Link></li>
-          <li><Link to="/about" className="navButton">&nbsp;About&nbsp;</Link></li>
-          <li><Link to="/" className="navButton">&nbsp;&nbsp;Home&nbsp;&nbsp;</Link></li>
-        </ul>
-      </header>
-    //</Menu>
+      <div id="outer-container" style={{height: '100%'}}>
+      
+      {this.getMenu()}
+      </div>
     );
   }
 //)
+}
+var styler = {
+  bmBurgerButton: {
+    position: 'fixed',
+    width: '36px',
+    height: '30px',
+    left: '36px',
+    top: '36px',
+  },
+  bmBurgerBars: {
+    background: 'white'
+  },
+  bmCrossButton: {
+    height: '24px',
+    width: '24px'
+  },
+  bmCross: {
+    background: '#bdc3c7'
+  },
+  bmMenu: {
+    background: '#222',
+    padding: '2.5em',
+    fontSize: '1.15em',
+    overflow: 'hidden'
+  },
+  bmMorphShape: {
+    fill: '#373a47'
+  },
+  bmItemList: {
+    color: '#b8b7ad',
+  },
+  bmItem: {
+    display: 'inline-block',
+    width: '100%',
+  },
+  bmOverlay: {
+    background: 'rgba(0, 0, 0, 0.3)'
+  }
 }
 export default HeaderPage;
