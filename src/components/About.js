@@ -11,7 +11,7 @@ class About extends Component{
 
   render(){
     return(
-      <div className="About"> 
+      <div className="Page"> 
         <div className="About-title"> 
           wvuong() - Linux man page
         </div>

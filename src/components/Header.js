@@ -81,9 +81,8 @@ class HeaderPage extends Component{
 
   render(){
     return(
-      <div id="outer-container" style={{height: '100%'}}>
-      
-      {this.getMenu()}
+      <div>
+        {this.getMenu()}
       </div>
     );
   }

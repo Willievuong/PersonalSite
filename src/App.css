@@ -154,9 +154,10 @@ main{
 }
 
 /* About Page */
-.About{
+.Page{
 	padding-left: 3em;
 	padding-right: 3em;
+	padding-bottom: 2em;
 }
 
 .About-title{
@@ -174,3 +175,32 @@ main{
 .About-text{
 	padding: 1em;
 }
+
+/* Project Page */
+.Project-List{
+	border: solid;
+	border-color: white;
+}
+
+.Project-Item{
+	padding: .5em; 
+}
+
+.Project-Img{
+	border: solid; 
+	border-color: white;
+	padding: .25em; 
+}
+
+.Project-text{
+	padding: 2em;
+	text-align: center;
+}
+
+.Project-text a,
+	a:focus,
+	a:hover{
+		color: grey;
+		font-weight: heavy;
+	}
+
