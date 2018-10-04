@@ -40,7 +40,7 @@ class HeaderPage extends Component{
   constructor(){
     super(); 
     this.state = {
-      currentMenu: 'slide'
+      currentMenu: 'push'
     }
   }
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import construction from './UnderCons.png'
 import '../App.css';
 import Typing from './Typing'
+import Cards from './Cards'
+
 
 class Project extends Component{
   constructor(){
@@ -17,6 +18,9 @@ class Project extends Component{
                           ]}
           />
         </div>
+        <a href="https://github.com/Willievuong/roomm8">
+          <Cards/>
+        </a>
           {/* <div className="IntroPage"> 
           <img src={construction} className="Construction" alt="Construction"/>
           <p className="App-intro">
