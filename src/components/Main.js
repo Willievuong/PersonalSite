@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 
-import Home from './Home'
-import About from './About'
-import Project from './Project'
-import NotFound from './404'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Project from './Pages/Project'
+import NotFound from './Pages/404'
 import '../App.css';
 
 /* Handling the routing of the website */
@@ -20,6 +20,7 @@ class Main extends Component{
       <main className="Site-body">
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/home' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/project' component={Project}/>
           <Route path='*' component={NotFound}/>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../App.css';
 
 /* 404 Error Page Page */
 class errorPage extends Component{

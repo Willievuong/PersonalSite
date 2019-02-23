@@ -5,8 +5,8 @@
 html,
 body{
 	height: 100%;
-	background-color: #333;
-	color: white;
+	background-color: #FFFFFF;
+	color: #3399FF;
 	font-family: 'LiberationMonoRegular'; 
 }
 
@@ -25,15 +25,6 @@ a,
 a:focus,
 a:hover{
 	text-decoration: none;
-}
-
-/* Header CSS */
-.App-header {
-	position: fixed;
-	background-color: #222;
-	width: 100%;
-	padding-bottom: 6em;
-	overflow: hidden;
 }
 
 ul{
@@ -110,13 +101,13 @@ main{
 }
 
 .Site-body{
-	padding-top: 7em;
+	padding-top: 2em;
 }
 
 .site-footer{
 	flex-shrink: 0;
 	text-align: center;
-	background-color: #222;
+	background-color: #3399FF;
 	width: 100%;
 }
 
@@ -156,12 +147,12 @@ main{
 }
 
 .About-text{
-	color: white;
+	color: #3399FF;
 	padding: 1em;
 }
 
 .text{
-	color:white;
+	color:#3399FF;
 	text-decoration:  underline;
 }
 

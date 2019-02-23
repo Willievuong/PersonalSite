@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import '../App.css';
-import construction from './UnderCons.png'
-import Typing from './Typing'
+import '../../App.css';
+import Typing from '../Typing'
 
 /* Home Page */
 class Home extends Component{

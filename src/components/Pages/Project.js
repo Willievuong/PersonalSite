@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../App.css';
-import Typing from './Typing'
-import Cards from './Cards'
+import '../../App.css';
+import Typing from '../Typing'
+import Cards from '../Cards'
 
 
 class Project extends Component{

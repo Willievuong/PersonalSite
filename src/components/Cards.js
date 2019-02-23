@@ -7,13 +7,14 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import roomm8Logo from '../img/roomm8.png'
 
 const styles = {
   card: {
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 };
 
@@ -24,7 +25,7 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://via.placeholder.com/350x150"
+          image={roomm8Logo}
           title="placeholder"
         />
         <CardContent>

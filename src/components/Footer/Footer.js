@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import github from '../img/github.png'
-import mail from '../img/gmail.png'
-import linkedin from '../img/linkedin.png'
-import hackerrank from '../img/hackerrank.png'
-import '../App.css';
+import github from '../../img/github.png'
+import mail from '../../img/gmail.png'
+import linkedin from '../../img/linkedin.png'
+import hackerrank from '../../img/hackerrank.png'
+import '../../App.css';
+import '../CSS/Footer.css'
 
 /* Bottom of the page */
 class FooterPage extends Component{
