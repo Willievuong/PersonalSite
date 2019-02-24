@@ -11,10 +11,6 @@ import '../App.css';
 /* i.e. localhost:3000/about */
 
 class Main extends Component{
-  constructor(){
-    super(); 
-  }
-  
   render(){
     return(
       <main className="Site-body">

@@ -8,10 +8,6 @@ import '../CSS/Footer.css'
 
 /* Bottom of the page */
 class FooterPage extends Component{
-    constructor(){
-        super(); 
-    }
-
     render(){
         return(
             <div className="site-footer">

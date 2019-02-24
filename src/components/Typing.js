@@ -9,10 +9,6 @@ import Typed from 'typed.js';
 // }
 
 class TypedReactDemo extends React.Component {
-  constructor(){
-    super(); 
-  }
-
   componentDidMount() {
     const { strings } = this.props;
 

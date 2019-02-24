@@ -31,10 +31,6 @@ const theme = createMuiTheme({
 
 
 class App extends Component{ 
-  constructor(){
-    super(); 
-  } 
-
   render(){
     return(
       <MuiThemeProvider theme={theme}>

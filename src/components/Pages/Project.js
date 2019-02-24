@@ -2,14 +2,30 @@ import React, { Component } from 'react';
 import '../../App.css';
 import Typing from '../Typing'
 import Cards from '../Cards'
+import Grid from '@material-ui/core/Grid';
+import roomm8Logo from '../../img/roomm8.png'
 
 
 class Project extends Component{
-  constructor(){
-    super(); 
-  }
-
   render(){
+    const roomm8 = {
+      name: "roomm8",
+      description: "(IN DEVELOPMENT) An application meant for interaction between roommates",
+      image: roomm8Logo,
+    }
+
+    const pacwoman = {
+      name: "PacWoman",
+      description: "1st person VR Pacman game",
+      image: roomm8Logo,
+    }
+
+    const placeHolder = {
+      name: "placeHolder",
+      description: "Place Holder Description",
+      image: roomm8Logo,
+    }
+
     return(
       <div className="Page"> 
         <div className="Intro-Type">
@@ -18,30 +34,23 @@ class Project extends Component{
                           ]}
           />
         </div>
-        <a href="https://github.com/Willievuong/roomm8">
-          <Cards/>
-        </a>
-          {/* <div className="IntroPage"> 
-          <img src={construction} className="Construction" alt="Construction"/>
-          <p className="App-intro">
-            This part of the is under construction, check back in a few days for updates.
-          </p>
-          </div> */}
-          
-          {/* <ul className="Project-List">
-            <li className="Project-Item">
-              <div className="Project-Img"><img src="https://via.placeholder.com/200x200"/>
-              <div className="Project-Text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere ornare imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae suscipit ante. Mauris vitae semper lorem. Suspendisse facilisis iaculis vestibulum. Proin ut ultricies orci, vel mattis ipsum. Phasellus vitae est posuere, dictum diam quis, rutrum risus. Proin volutpat neque dignissim malesuada dignissim. </div> </div>
-            </li>
-            <li className="Project-Item">
-              <div className="Project-Img"><img src="https://via.placeholder.com/200x200"/>
-              <div className="Project-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere ornare imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae suscipit ante. Mauris vitae semper lorem. Suspendisse facilisis iaculis vestibulum. Proin ut ultricies orci, vel mattis ipsum. Phasellus vitae est posuere, dictum diam quis, rutrum risus. Proin volutpat neque dignissim malesuada dignissim.</div> </div>
-            </li>
-            <li className="Project-Item">
-              <div className="Project-Img"><img src="https://via.placeholder.com/200x200"/>
-              <div className="Project-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere ornare imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vitae suscipit ante. Mauris vitae semper lorem. Suspendisse facilisis iaculis vestibulum. Proin ut ultricies orci, vel mattis ipsum. Phasellus vitae est posuere, dictum diam quis, rutrum risus. Proin volutpat neque dignissim malesuada dignissim.</div> </div>
-            </li>
-          </ul> */}
+        <Grid container direction="row" justify="center" alignItems="center" spacing={16}>
+          <Grid item xs={2}>                            
+            <a href="https://github.com/Willievuong/roomm8">
+              <Cards detail={roomm8}/>
+            </a>
+          </Grid>
+          <Grid item xs={2}>
+            <a href="https://devpost.com/software/3d-pacman-rocly9"> 
+              <Cards detail={pacwoman}/>
+            </a>
+          </Grid>
+          <Grid item xs={2}>
+            <a href="https://devpost.com/software/3d-pacman-rocly9"> 
+              <Cards detail={placeHolder}/>
+            </a>
+          </Grid>
+        </Grid>
           
           <div className="Project-End">
             If you are curious about other project I've done in the past that aren't listed here, 

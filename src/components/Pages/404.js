@@ -3,10 +3,6 @@ import '../../App.css';
 
 /* 404 Error Page Page */
 class errorPage extends Component{
-  constructor(){
-    super(); 
-  } 
-
   render(){
     return(
       <div> 
