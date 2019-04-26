@@ -5,6 +5,10 @@ Try It
 --
 Live Website: https://www.williamvuong.net/
 
+Build Status 
+--
+[![Build Status](https://travis-ci.org/Willievuong/PersonalSite.svg?branch=master)](https://travis-ci.org/Willievuong/PersonalSite)
+
 Description 
 --
 This repository purpose is for personal website. 
