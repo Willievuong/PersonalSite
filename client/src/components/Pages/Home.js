@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../App.css';
 import Typing from '../Typing'
+import { Link } from "react-router-dom";
 
 /* Home Page */
 class Home extends Component{
@@ -15,9 +16,9 @@ class Home extends Component{
           />
         </div>
         <div className="Outer-Button"> 
-          <a className="Resume-Button" href="https://1drv.ms/f/s!AhgK9ZtBhYlypqJaL95HYc1zRQcBOQ"> 
+          <Link to="/resume" className="Resume-Button">
             Resume
-          </a>
+          </Link>
         </div> 
       </div>
     )
