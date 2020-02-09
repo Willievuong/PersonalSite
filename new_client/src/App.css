@@ -4,8 +4,12 @@
   text-align: center;
   color: #333;
   overflow: hidden;
+  height: 100%;
 }
 
+#root{
+  height: 100%;
+}
 
 .face {
   margin-top: 10%; 
@@ -24,4 +28,10 @@ p {
 
 img {
   border-radius: 50%;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
 }
