@@ -1,8 +1,6 @@
 import React from 'react';
-import { Layout, Menu, Icon } from "antd";
+import { Layout } from "antd";
 const { Header} = Layout;
-
-const { SubMenu } = Menu;
 
 function HeaderNav(){
     return(
