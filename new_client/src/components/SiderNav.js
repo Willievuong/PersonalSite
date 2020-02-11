@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import connect from 'react-redux'
 import { Layout, Menu, Icon} from 'antd';
 
 const {SubMenu} = Menu;
 const { Sider } = Layout;
 
 function SiderNav(){
+    const [view, setView] = useState(1)
+
+    function handleClick(e){
+      setView(e.key)
+    }
+
     return(
     <Sider
       breakpoint="lg"
@@ -17,7 +24,7 @@ function SiderNav(){
       }}
     >
       <div className="logo"/>
-      <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+      <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleClick}>
         <Menu.Item key="1">
           <Icon type="user"/>
           <span className="nav-text">About</span>

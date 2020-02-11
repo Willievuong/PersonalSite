@@ -32,8 +32,9 @@ function Landing(){
             onClick={() => window.open(resume, "_blank")}
             type="primary"
             shape="round"
+
             >
-            Download Resume
+            Resume
         </Button>
     </div>
     );
