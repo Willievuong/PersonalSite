@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
 
-import login from "./login";
+import setScreenReducer from './setScreen'
 
-export default combineReducers({ login });
+export default combineReducers({ setScreenReducer });

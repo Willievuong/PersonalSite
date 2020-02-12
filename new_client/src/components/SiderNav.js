@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
-import connect from 'react-redux'
 import { Layout, Menu, Icon} from 'antd';
 
+import {useSelector, useDispatch} from 'react-redux'
+import {setScreen} from '../redux/actions'
 const {SubMenu} = Menu;
 const { Sider } = Layout;
 
 function SiderNav(){
-    const [view, setView] = useState(1)
+    const screenKey = useSelector(state => state.screenKey)
+    const dispatch = useDispatch()
 
     function handleClick(e){
-      setView(e.key)
+      dispatch(setScreen(e.key))
     }
 
     return(

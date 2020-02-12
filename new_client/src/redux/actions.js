@@ -1,8 +1,8 @@
 import { SET_SCREEN } from './actionTypes'
 
-export const setScreen = screen => ({
+export const setScreen = key => ({
     type: SET_SCREEN,
     payload:{
-        screen
+        screenKey: key
     }
 })

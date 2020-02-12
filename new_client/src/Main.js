@@ -4,8 +4,10 @@ import Projects from './pages/Projects';
 import WorkInProgress from './pages/WorkInProgress';
 import Contact from './pages/Contact';
 
+import {useSelector, useDispatch} from 'react-redux'
+
 function Main(){
-    const [view, setView] = useState("1")
+    const screenKey = useSelector(state => state.setScreenReducer.screenKey)
 
     const renderPage = (key) => {
         switch(key){
@@ -26,7 +28,7 @@ function Main(){
         } 
     }
 
-    return renderPage(view)
+    return renderPage(screenKey)
 }
 
 
