@@ -11,7 +11,7 @@
   height: 100%;
 }
 
-.face {
+.page {
   margin-top: 10%; 
 }
 
@@ -34,4 +34,10 @@ img {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
   margin: 16px;
+}
+
+.projectCard{
+  width: 300px;
+  margin: auto;
+  padding: 10px;
 }

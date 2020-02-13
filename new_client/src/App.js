@@ -6,6 +6,7 @@ import HeaderNav from './components/HeaderNav'
 import Footer from './components/Footer'
 import Main from './Main'
 
+const { Content } = Layout
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <SiderNav/>
       <Layout>
         <HeaderNav/>
-        <Main/>
+        <Content className="content">        
+          <Main/>
+        </Content>
         <Footer/>
       </Layout>
     </Layout>
