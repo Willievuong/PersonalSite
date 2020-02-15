@@ -1,8 +1,10 @@
 import React from 'react';
-import Landing from './pages/Landing';
+import Home from './pages/Home'
+import About from './pages/About';
 import Projects from './pages/Projects';
 import WorkInProgress from './pages/WorkInProgress';
 import Contact from './pages/Contact';
+import ErrorPage from './pages/404'
 
 import {useSelector} from 'react-redux'
 
@@ -12,19 +14,22 @@ function Main(){
     const renderPage = (key) => {
         switch(key){
             case "1":
-                return <Landing/> 
+                return <Home/> 
 
             case "2":
-                return <Projects/>
+                return <About/> 
 
             case "3":
-                return <WorkInProgress/>
+                return <Projects/>
 
             case "4":
+                return <WorkInProgress/>
+
+            case "5":
                 return <Contact/>
 
             default: 
-                return ""
+                return <ErrorPage/>
         } 
     }
 

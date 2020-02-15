@@ -28,10 +28,14 @@ function SiderNav(){
       <div className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleClick}>
         <Menu.Item key="1">
+          <Icon type="home"/>
+          <span className="nav-text">Home</span>
+        </Menu.Item>
+        <Menu.Item key="2">
           <Icon type="user"/>
           <span className="nav-text">About</span>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="3">
           <Icon type="database"/>
           <span className="nav-text">Projects</span>
         </Menu.Item>
@@ -42,12 +46,12 @@ function SiderNav(){
             </span>
         }>
           
-          <Menu.Item key="3">
+          <Menu.Item key="4">
           <Icon type="tool"/>
           <span className="nav-text">Under Construction</span>
         </Menu.Item>
         </SubMenu>
-        <Menu.Item key="4">
+        <Menu.Item key="5">
           <Icon type="mail"/>
           <span className="nav-text">Contact</span>
         </Menu.Item>

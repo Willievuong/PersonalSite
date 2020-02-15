@@ -4,14 +4,10 @@ import { Icon, Button, Avatar } from "antd";
 import '../App.css';
 import face from "../assets/photo.jpg";
 
-import Typing from '../components/Typing'
-
-
-function Landing(){
+function About(){
     const resume = "https://1drv.ms/f/s!AhgK9ZtBhYlypqJaL95HYc1zRQcBOQ";
     
-    const typeString = ["Hi", "Hey", "Hello!", "I'm William,", "nice to meet you ;)"]
-    
+
     return (
     <div className="page">
         <div>
@@ -43,9 +39,6 @@ function Landing(){
                 I love meeting people and learning something new. So if you'd like to have a chat, I'd love to hear from you!
                 You can find out the various ways to reach me in the contact section. 
             </p>
-            <p>
-                <Typing strings={typeString}/>
-            </p>
         </div>
         <div>
         <a href="https://www.linkedin.com/in/vuongwilliam/">
@@ -72,4 +65,4 @@ function Landing(){
 
 
 
-export default Landing;
+export default About;
