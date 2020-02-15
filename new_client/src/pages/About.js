@@ -1,19 +1,20 @@
 import React from 'react'; 
-import { Icon, Button, Avatar } from "antd";
+import QueueAnim from "rc-queue-anim";
+import { Avatar } from "antd";
 
 import '../App.css';
 import face from "../assets/photo.jpg";
 
 function About(){
-    const resume = "https://1drv.ms/f/s!AhgK9ZtBhYlypqJaL95HYc1zRQcBOQ";
-    
 
     return (
+
     <div className="page">
-        <div>
+        <QueueAnim delay={200} interval={250} duration={1500}>
+        <div key="1">
             <Avatar src={face} alt="face" size={128} />
         </div>
-        <div className="biography">
+        <div key="2" className="biography">
             <p>
                 I'm <b>William Vuong</b>, currently I am the lead app developer at 
                 <a href="https://theinfopost.com/"> Infopost </a> 
@@ -40,25 +41,7 @@ function About(){
                 You can find out the various ways to reach me in the contact section. 
             </p>
         </div>
-        <div>
-        <a href="https://www.linkedin.com/in/vuongwilliam/">
-            <Icon type="linkedin" />
-        </a>
-        <a href="https://github.com/willievuong">
-            <Icon type="github" />
-        </a>
-        <a href="mailto:willievuong@gmail.com">
-            <Icon type="mail" />
-        </a>
-        </div>
-
-        <Button
-            onClick={() => window.open(resume, "_blank")}
-            type="primary"
-            shape="round"
-        >
-            Resume
-        </Button>
+        </QueueAnim>
     </div>
     );
 }

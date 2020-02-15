@@ -1,6 +1,8 @@
 import React from 'react'
 import Typed from 'typed.js'
 
+import '../App.css'
+
 class Typing extends React.Component {
     componentDidMount() {
       const { strings } = this.props;
@@ -19,7 +21,7 @@ class Typing extends React.Component {
   
     render() {
       return (
-        <div> 
+        <div className="typeString"> 
             <span
                 ref={(el) => { this.el = el; }}
             />

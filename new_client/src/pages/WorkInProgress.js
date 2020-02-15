@@ -1,5 +1,4 @@
 import React from 'react'; 
-import { Icon, Button, Avatar } from "antd";
 
 import '../App.css';
 

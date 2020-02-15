@@ -15,16 +15,17 @@ export default function Contact(){
             <div>
                 <Typing strings={typeString}/>
             </div>
-
-            <a href="https://www.linkedin.com/in/vuongwilliam/">
-            <Icon type="linkedin" />
-            </a>
-            <a href="https://github.com/willievuong">
-                <Icon type="github" />
-            </a>
-            <a href="mailto:willievuong@gmail.com">
-                <Icon type="mail" />
-            </a>
+            <div className="iconRow">
+                <a href="https://www.linkedin.com/in/vuongwilliam/">
+                    <Icon type="linkedin" />
+                </a>
+                <a href="https://github.com/willievuong">
+                    <Icon type="github" />
+                </a>
+                <a href="mailto:willievuong@gmail.com">
+                    <Icon type="mail" />
+                </a>
+            </div>
     
         </div>
     )

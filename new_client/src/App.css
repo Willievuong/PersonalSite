@@ -52,5 +52,20 @@ img {
 }
 
 .biography > p{
+  color: #314659;
   margin: 0
+}
+
+.iconRow{
+  margin-top: 5%
+}
+
+.typeString{
+  padding: 1em;
+  color: #1890ff;
+  font-size: 2em; 
+}
+
+.resumeButton{
+  margin-top: 5%
 }
