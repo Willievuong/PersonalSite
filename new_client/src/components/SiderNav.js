@@ -7,7 +7,6 @@ const {SubMenu} = Menu;
 const { Sider } = Layout;
 
 function SiderNav(){
-    const screenKey = useSelector(state => state.screenKey)
     const dispatch = useDispatch()
 
     function handleClick(e){

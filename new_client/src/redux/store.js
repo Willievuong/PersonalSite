@@ -3,7 +3,15 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./reducers";
 
 import thunkMiddleware from "redux-thunk";
+import { createLogger } from 'redux-logger'
+import { fetchWeather } from "./actions";
 
-const middleware = applyMiddleware(thunkMiddleware);
 
-export default createStore(rootReducer, composeWithDevTools(middleware));
+const loggerMiddleware = createLogger()
+const middleware = applyMiddleware(thunkMiddleware, loggerMiddleware);
+
+const store = createStore(rootReducer, composeWithDevTools(middleware));
+
+store.dispatch(fetchWeather())
+
+export default store
