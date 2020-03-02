@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/Home'
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Note from './pages/Note';
 import WorkInProgress from './pages/WorkInProgress';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/404'
@@ -21,11 +22,12 @@ function Main(){
 
             case "3":
                 return <Projects/>
-
             case "4":
+                return <Note/>
+            case "5":
                 return <WorkInProgress/>
 
-            case "5":
+            case "6":
                 return <Contact/>
 
             default: 
