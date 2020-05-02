@@ -22,7 +22,6 @@ function Main(){
 
             case "3":
                 return <Projects/>
-
             case "4":
                 return <Notes/>
 
@@ -30,6 +29,9 @@ function Main(){
                 return <WorkInProgress/>
 
             case "6":
+                return <Contact/>
+
+            case "7":
                 return <Contact/>
 
             default: 

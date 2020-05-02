@@ -6,7 +6,6 @@ import thunkMiddleware from "redux-thunk";
 import { createLogger } from 'redux-logger'
 import { fetchWeather } from "./actions";
 
-
 const loggerMiddleware = createLogger()
 const middleware = applyMiddleware(thunkMiddleware, loggerMiddleware);
 

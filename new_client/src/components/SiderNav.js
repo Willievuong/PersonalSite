@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Menu, Icon } from 'antd';
 
-import {useSelector, useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {setScreen} from '../redux/actions'
 const {SubMenu} = Menu;
 const { Sider } = Layout;
@@ -56,6 +56,10 @@ function SiderNav(){
         <Menu.Item key="6">
           <Icon type="mail"/>
           <span className="nav-text">Contact</span>
+        </Menu.Item>
+        <Menu.Item key="7">
+              <Icon type="thunderbolt"/>
+              <span className="nav-text">Weather</span>
         </Menu.Item>
       </Menu>
     </Sider>
