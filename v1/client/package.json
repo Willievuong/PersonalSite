@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^3.26.8",
     "axios": "^0.19.2",
-    "mocha": "^7.0.1",
     "rc-queue-anim": "^1.8.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -41,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "mocha": "^7.1.2",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8"
   }
