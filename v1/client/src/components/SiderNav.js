@@ -1,5 +1,10 @@
 import React from 'react'
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu } from 'antd';
+import { HomeOutlined, UserOutlined, DatabaseOutlined, 
+          ReadOutlined, ToolOutlined, MailOutlined, 
+          ThunderboltOutlined 
+        } 
+        from '@ant-design/icons'
 
 import {useDispatch} from 'react-redux'
 import {setScreen} from '../redux/actions'
@@ -27,38 +32,38 @@ function SiderNav(){
       <div className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleClick}>
         <Menu.Item key="1">
-          <Icon type="home"/>
+          <HomeOutlined/>
           <span className="nav-text">Home</span>
         </Menu.Item>
         <Menu.Item key="2">
-          <Icon type="user"/>
+          <UserOutlined/>
           <span className="nav-text">About</span>
         </Menu.Item>
         <Menu.Item key="3">
-          <Icon type="database"/>
+          <DatabaseOutlined/>
           <span className="nav-text">Projects</span>
         </Menu.Item>
         <SubMenu key="sub1" title={
             <span>
-                <Icon type="read"/>
+                <ReadOutlined/>
                 <span className="nav-text">Note</span>
             </span>
         }>
           <Menu.Item key="4">
-            <Icon type="read"/>
+          <ReadOutlined/>
             <span className="nav-text">Notes</span>
           </Menu.Item>
           <Menu.Item key="5">
-            <Icon type="tool"/>
+            <ToolOutlined/>
             <span className="nav-text">Under Construction</span>
           </Menu.Item>
         </SubMenu>
         <Menu.Item key="6">
-          <Icon type="mail"/>
+          <MailOutlined/>
           <span className="nav-text">Contact</span>
         </Menu.Item>
         <Menu.Item key="7">
-              <Icon type="thunderbolt"/>
+              <ThunderboltOutlined/>
               <span className="nav-text">Weather</span>
         </Menu.Item>
       </Menu>

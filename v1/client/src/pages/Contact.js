@@ -1,5 +1,5 @@
 import React from 'react'
-import {Icon} from 'antd'
+import {LinkedinOutlined, GithubOutlined, MailOutlined} from '@ant-design/icons'
 import '../App.css';
 
 import Typing from '../components/Typing'
@@ -17,13 +17,13 @@ export default function Contact(){
             </div>
             <div className="iconRow">
                 <a href="https://www.linkedin.com/in/vuongwilliam/">
-                    <Icon type="linkedin" />
+                    <LinkedinOutlined/>
                 </a>
                 <a href="https://github.com/willievuong">
-                    <Icon type="github" />
+                    <GithubOutlined/>
                 </a>
                 <a href="mailto:willievuong@gmail.com">
-                    <Icon type="mail" />
+                    <MailOutlined/>
                 </a>
             </div>
     

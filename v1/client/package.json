@@ -1,18 +1,16 @@
 {
-  "name": "new_client",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "antd": "^3.26.8",
+    "@ant-design/icons": "^4.1.0",
+    "antd": "^4.2.0",
     "axios": "^0.19.2",
     "rc-queue-anim": "^1.8.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
-    "react-scripts": "3.3.1",
+    "react-scripts": "^3.4.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
@@ -40,6 +38,9 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.7.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.1.2",
     "mocha": "^7.1.2",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8"
