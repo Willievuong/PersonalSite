@@ -4,9 +4,9 @@ from .views import BlogView, BlogDetailsView
 
 
 urlpatterns = {
-    url(r'^blog/$', CustomUserView, name="customuser"),
+    url(r'^blog/$', BlogView, name="blog"),
     url(r'^blog/(?P<pk>[0-9]+)/$',
-    CustomUserDetailsView, name="customuser_details"),
+    BlogDetailsView, name="blog_details"),
 }
 
 

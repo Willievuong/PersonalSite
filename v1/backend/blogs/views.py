@@ -25,7 +25,7 @@ def BlogView(request):
 def BlogDetailsView(request, pk):
     try:
         query = Blog.objects.get(pk=pk)
-    except query.DoesNotExist:
+    except Blog.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
