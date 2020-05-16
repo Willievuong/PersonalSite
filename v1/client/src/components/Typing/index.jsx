@@ -1,7 +1,7 @@
 import React from 'react'
 import Typed from 'typed.js'
 
-import '../App.css'
+import './style.css'
 
 class Typing extends React.Component {
     componentDidMount() {

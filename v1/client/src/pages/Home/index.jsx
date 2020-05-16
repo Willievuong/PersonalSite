@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from "antd";
 
-import Typing from '../components/Typing'
-import '../App.css'
+import Typing from '../../components/Typing'
+import '../../App.css'
 
 
 function Home(){

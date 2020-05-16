@@ -1,8 +1,8 @@
 import React from 'react'; 
 
-import '../App.css';
+import '../../App.css';
 
-import Typing from '../components/Typing'
+import Typing from '../../components/Typing'
 
 function WorkInProgressPage(){
     const typeString = ["Whoops!", "this section is under construction", "check back in a few weeks!"]

@@ -2,8 +2,9 @@ import React from 'react';
 import QueueAnim from "rc-queue-anim";
 import { Avatar } from "antd";
 
-import '../App.css';
-import face from "../assets/photo.jpg";
+import '../../App.css';
+import './style.css'
+import face from "../../assets/photo.jpg";
 
 function About(){
 

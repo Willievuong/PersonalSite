@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
+import { Button } from "antd";
 import { Card, Row, Col } from 'antd'
 
-import '../App.css';
+import Typing from '../../components/Typing'
+import '../../App.css'
 
-import Typing from '../components/Typing'
 
-export default function Projects(){
-    const typeString = ["Whoops!", "I don't have anything cool to show yet!", "check back in a few weeks!"]
+function Notes(){
+    const typeString = ["All my notes are written on medium!"]
 
     const fillerCards = [
         {   
@@ -25,7 +26,7 @@ export default function Projects(){
             "content": "Content of a Card"
         },
     ]
-
+    
     function cardBuilder(data){
         let { title, content } = data
         return(
@@ -37,23 +38,24 @@ export default function Projects(){
         )
     }
 
+
     return(
         <div className="page">
             <div>
-                Projects
+                Notes    
             </div>
 
             <div>
                 <Typing strings={typeString}/>
             </div>
 
-            <Row gutter={16}>
+            <Col>
                 {fillerCards.map((data) => cardBuilder( data ))}
-            </Row>
-
-            <Row gutter={16}>
-                {fillerCards.map((data) => cardBuilder( data ))}
-            </Row>
+            </Col>
+            
         </div>
     )
 }
+
+
+export default Notes; 

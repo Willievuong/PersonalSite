@@ -45,32 +45,10 @@ img {
   padding: 10px;
 }
 
-.about{
-  margin: 0 25%;
-  background-color: white;
-  padding: 2% 5%; 
-  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-}
-
-.biography{
-  margin: 4% auto;
-  max-width: 32em; 
-}
-
-.biography > p{
-  color: #314659;
-  margin: 0
-}
-
 .iconRow{
   margin-top: 5%
 }
 
-.typeString{
-  padding: 1em;
-  color: #1890ff;
-  font-size: 2em; 
-}
 
 .resumeButton{
   margin-top: 5%

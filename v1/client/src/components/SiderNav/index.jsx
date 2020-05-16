@@ -7,7 +7,7 @@ import { HomeOutlined, UserOutlined, DatabaseOutlined,
         from '@ant-design/icons'
 
 import {useDispatch} from 'react-redux'
-import {setScreen} from '../redux/actions'
+import {setScreen} from '../../redux/actions'
 const {SubMenu} = Menu;
 const { Sider } = Layout;
 
