@@ -11,20 +11,9 @@ Build Status
 
 Description 
 --
-This repository purpose is for personal website. 
+It's just another repo for personal website! Definitely gone through many iterations and changes. I've never found myself being content with what it look likes versus what I want it to look like. So I'll also include past iterations, complete or not in this repo! 
 
 Run It 
 --
-1. `npm install`
-2. `npm start` 
-3. Run `http://localhost:3000/`
+0. Go into the directory with the latest version and follow the step for each folder!
 
-Credits
--- 
-Created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md), [Type.js](https://mattboldt.com/demos/typed-js/).
-
-Planned Features
---
-0. OAuth (just for me tho)
-1. Adding Projects via Admin Panels  
-2. Blog
