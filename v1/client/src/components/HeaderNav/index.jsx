@@ -1,10 +1,14 @@
 import React from 'react';
 import { Layout } from "antd";
-const { Header} = Layout;
+
+
+import './style.css';
+
+const { Header } = Layout;
 
 function HeaderNav(){
     return(
-        <Header style={{ background: '#fff', padding: 0 }} />
+        <Header className="header" style={{ background: '#fff', padding: 0 }} />
     )
 }
 
