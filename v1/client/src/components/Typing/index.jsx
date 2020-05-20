@@ -6,7 +6,7 @@ import './style.css'
 class Typing extends React.Component {
     componentDidMount() {
       const { strings } = this.props;
-  
+
       const options = {
         strings: strings,
         typeSpeed: 50,
@@ -14,18 +14,18 @@ class Typing extends React.Component {
       }
       this.typed = new Typed(this.el, options);
     }
-  
+
     componentWillUnmount() {
       this.typed.destroy();
     }
   
     render() {
       return (
-        <div className="typeString"> 
+        <span className="typeString"> 
             <span
                 ref={(el) => { this.el = el; }}
             />
-        </div>
+        </span>
       );
     }
   }

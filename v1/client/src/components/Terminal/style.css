@@ -1,0 +1,52 @@
+.terminal{
+    width: auto;
+    box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
+
+.termHeader{
+    background: #595959;
+    color: white;
+    padding: 2px;
+}
+
+.termTab{
+    color: #bfbfbf;
+    /* padding: 2px; */
+}
+
+.termTabCol{
+    float: left;
+    text-align: center;
+    width: 50%;
+    background: #8c8c8c; 
+    border-style: none none solid none;
+    border-color: #8c8c8c;
+}
+
+.termTabSelected{
+    color: white;
+    border-color: orange;
+}
+
+.termTabUnSelected:hover{
+    border-color: #595959;
+}
+
+.termBody{
+    background: #595959;
+    text-align: left;
+    padding-bottom: 4%;
+    font-size: 1.5em;
+}
+
+.user{
+    color: #52c41a;
+}
+
+.location{
+    color: #40a9ff;
+}
+
+.command{
+    color: #73d13d;
+}

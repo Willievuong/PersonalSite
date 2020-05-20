@@ -12,7 +12,7 @@ function App() {
   return (
     <Layout style={{height: '100%'}}>
       <SiderNav/>
-      <Layout style={{background: 'white'}}>
+      <Layout style={{background: '#f0f0f0'}}>
         <HeaderNav/>
         <Content className="content">        
           <Main/>
