@@ -1,14 +1,19 @@
 import React from 'react'
 import { Layout, Menu } from 'antd';
-import { HomeOutlined, UserOutlined, DatabaseOutlined, 
-          ReadOutlined, ToolOutlined, MailOutlined, 
-          ThunderboltOutlined 
-        } 
-        from '@ant-design/icons'
+import { 
+  HomeOutlined, 
+  UserOutlined, 
+  DatabaseOutlined, 
+  ReadOutlined,
+  MailOutlined, 
+  ThunderboltOutlined 
+  } from '@ant-design/icons'
 
 import {useDispatch} from 'react-redux'
+import{ Link } from "react-router-dom";
+
 import {setScreen} from '../../redux/actions'
-const {SubMenu} = Menu;
+
 const { Sider } = Layout;
 
 function SiderNav(){
@@ -32,39 +37,40 @@ function SiderNav(){
       <div className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleClick}>
         <Menu.Item key="1">
-          <HomeOutlined/>
-          <span className="nav-text">Home</span>
+          <Link to="/">
+            <HomeOutlined/>
+            <span className="nav-text">Home</span>
+          </Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <UserOutlined/>
-          <span className="nav-text">About</span>
+          <Link to="/about">
+            <UserOutlined/>
+            <span className="nav-text">About</span>
+          </Link>
         </Menu.Item>
         <Menu.Item key="3">
-          <DatabaseOutlined/>
-          <span className="nav-text">Projects</span>
+          <Link to="/projects">
+            <DatabaseOutlined/>
+            <span className="nav-text">Projects</span>
+          </Link>
         </Menu.Item>
-        <SubMenu key="sub1" title={
-            <span>
-                <ReadOutlined/>
-                <span className="nav-text">Note</span>
-            </span>
-        }>
-          <Menu.Item key="4">
-          <ReadOutlined/>
+        <Menu.Item key="4">
+          <Link to="/notes">
+            <ReadOutlined/>
             <span className="nav-text">Notes</span>
-          </Menu.Item>
-          <Menu.Item key="5">
-            <ToolOutlined/>
-            <span className="nav-text">Under Construction</span>
-          </Menu.Item>
-        </SubMenu>
-        <Menu.Item key="6">
-          <MailOutlined/>
-          <span className="nav-text">Contact</span>
+          </Link>
         </Menu.Item>
-        <Menu.Item key="7">
-              <ThunderboltOutlined/>
-              <span className="nav-text">Weather</span>
+        <Menu.Item key="5">
+          <Link to="/wip">
+            <ThunderboltOutlined/>
+            <span className="nav-text">Weather</span>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="6">
+          <Link to="/contact">
+            <MailOutlined/>
+            <span className="nav-text">Contact</span>
+          </Link>
         </Menu.Item>
       </Menu>
     </Sider>

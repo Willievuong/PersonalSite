@@ -1,4 +1,9 @@
 import React from 'react';
+import {useSelector} from 'react-redux'
+import { Layout } from 'antd';
+import{ Link } from "react-router-dom";
+
+
 import Home from './pages/Home'
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -6,8 +11,11 @@ import Notes from './pages/Notes'
 import WorkInProgress from './pages/WorkInProgress';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/404'
+import SiderNav from './components/SiderNav'
+import HeaderNav from './components/HeaderNav'
+import Footer from './components/Footer'
 
-import {useSelector} from 'react-redux'
+const { Content } = Layout
 
 function Main(){
     const screenKey = useSelector(state => state.setScreenReducer.screenKey)
@@ -15,13 +23,13 @@ function Main(){
     const renderPage = (key) => {
         switch(key){
             case "1":
-                return <Home/> 
+                return <Home/>
 
             case "2":
-                return <About/> 
-
+                return <About/>
             case "3":
                 return <Projects/>
+
             case "4":
                 return <Notes/>
 
@@ -31,15 +39,24 @@ function Main(){
             case "6":
                 return <Contact/>
 
-            case "7":
-                return <Contact/>
-
             default: 
                 return <ErrorPage/>
         } 
     }
 
-    return renderPage(screenKey)
+    return(
+        <Layout style={{height: '100%'}}>
+            <SiderNav/>
+            <Layout style={{background: '#f0f0f0'}}>
+            <HeaderNav/>
+            <Content className="content">        
+                {renderPage(screenKey)}
+            </Content>
+            <Footer style={{background: 'none'}}/>
+            </Layout>
+        </Layout>
+
+    ) 
 }
 
 

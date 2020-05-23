@@ -1,25 +1,24 @@
 import React from 'react';
-import './App.css';
-import { Layout } from 'antd';
-import SiderNav from './components/SiderNav'
-import HeaderNav from './components/HeaderNav'
-import Footer from './components/Footer'
-import Main from './Main'
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';  
 
-const { Content } = Layout
+import './App.css';
+import Main from './Main'
+import ErrorPage from './pages/404'
+
 
 function App() {
   return (
-    <Layout style={{height: '100%'}}>
-      <SiderNav/>
-      <Layout style={{background: '#f0f0f0'}}>
-        <HeaderNav/>
-        <Content className="content">        
+    <Router>
+      <Switch>
+        <Route path='/'>
           <Main/>
-        </Content>
-        <Footer style={{background: 'none'}}/>
-      </Layout>
-    </Layout>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
