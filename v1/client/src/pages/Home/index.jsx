@@ -1,7 +1,5 @@
 import React from 'react'
 import { Button } from "antd";
-
-import Typing from '../../components/Typing'
 import Terminal from '../../components/Terminal'
 import '../../App.css'
 import './style.css'
@@ -14,10 +12,6 @@ function Home(){
     return(
         <div className="page">
             <Terminal typeString={typeString}/>
-
-            <div className="helloString">
-                <Typing strings={typeString}/>
-            </div>
 
             <Button
                 onClick={() => window.open(resume, "_blank")}

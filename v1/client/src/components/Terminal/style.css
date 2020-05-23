@@ -1,12 +1,46 @@
 .terminal{
-    width: auto;
-    box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 65%; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
 }
 
 .termHeader{
     background: #595959;
     color: white;
-    padding: 2px;
+}
+
+.termHeaderLeft{
+    float: left;
+    width: 33%;
+    text-align: left; 
+}
+
+.termHeaderMiddle{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.termHeaderRight{
+    float:  left;
+    width: 33%;
+    text-align: right;
+}
+
+.iconButton{
+    margin: 2%;
+    padding: 2%; 
+    border-radius: 5px;
+    background: #9a9a9a;
+}
+
+.iconButton:hover{
+    background: #8f8f8f;
+    transition: .5s;
 }
 
 .termTab{
@@ -35,7 +69,7 @@
 .termBody{
     background: #595959;
     text-align: left;
-    padding-bottom: 4%;
+    padding: 2% 2% 4% 2%;
     font-size: 1.5em;
 }
 

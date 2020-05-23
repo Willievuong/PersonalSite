@@ -1,4 +1,7 @@
 import React from 'react'
+import { PlusSquareOutlined, SearchOutlined, LineOutlined, MenuOutlined, CloseCircleFilled, SwitcherOutlined
+  } 
+  from '@ant-design/icons'
 
 import './style.css'
 import Typing from '../Typing'
@@ -10,29 +13,29 @@ function Terminal(props){
         <div className="terminal">
             <div className="termHeader">
                 <div className="termHeaderLeft">
-                    <div className="termNewTab">
-
-                    </div>
+                    <span className="termNewTab">
+                        <PlusSquareOutlined className="iconButton" style={{fontSize: '1.25em'}}/>
+                    </span>
                 </div>
                 <div className="termHeaderMiddle">
-                    willievuong@home:~/
+                    willievuong@home:~
                 </div>
                 <div className="termHeaderRight">
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
-                    </div>
+                    <span>
+                        <SearchOutlined className="iconButton" style={{fontSize: '1.25em'}}/>
+                    </span>
+                    <span>
+                        <MenuOutlined className="iconButton" style={{fontSize: '1.25em'}}/>
+                    </span>
+                    <span>
+                        <LineOutlined style={{fontSize: '1.25em'}}/>
+                    </span>
+                    <span>
+                        <SwitcherOutlined style={{fontSize: '1.25em'}}/>
+                    </span>
+                    <span>
+                        <CloseCircleFilled style={{fontSize: '1.25em', color: 'orange'}}/>
+                    </span>
                 </div>
             </div>
             <div className="termTab">
@@ -40,7 +43,7 @@ function Terminal(props){
                     willievuong@home:~
                 </div>
                 <div className="termTabCol termTabUnSelected">
-                    willievuong@home:~/CoolStuff
+                    willievuong@home:~/PlansForWorldDomination
                 </div>
                 <div>
 
