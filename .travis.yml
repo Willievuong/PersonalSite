@@ -15,4 +15,6 @@ matrix:
       - cd v1/backend/
       - pip install -r requirements.txt
     script:
-      - python3 manage.py test
+      - coverage run --source=blogs manage.py test
+    after_success:
+      coveralls

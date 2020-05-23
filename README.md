@@ -8,6 +8,7 @@ Live Website: https://www.williamvuong.net/
 Build Status 
 --
 [![Build Status](https://travis-ci.org/Willievuong/PersonalSite.svg?branch=master)](https://travis-ci.org/Willievuong/PersonalSite)
+[![Coverage Status](https://coveralls.io/repos/github/Willievuong/PersonalSite/badge.svg?branch=master)](https://coveralls.io/github/Willievuong/PersonalSite?branch=master)
 
 Description 
 --
