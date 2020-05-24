@@ -12,6 +12,7 @@ matrix:
     - npm run build
     before_deploy: "ls"
     deploy:
+      skip_cleanup: true
       provider: firebase
       token:
         secure: GzJUI+kAgiGQVqhrxSd9fznqogKwtCJ8F2oC5gNN/jVn6nYfhgjz8yvLmkdrgqtSP2opew3sXvITBv2/y52CwVV0X8d3gSxPjtfHQLGPfisx/hHQnvDkP1i+QMnXSOHOYrlvBGUeYOB6VxLXT6uTiMGi+bninTuKqj1NXAo5/W+m9tavurjrTGKpBtIRr2dQcef9oSDqaEzsbR7Dt5PVPQQ2Bgh90r4wJda+Jj7uDiwR5swareCzMvhrxerd9CwmTYOhfN586zNC0Um9rDijcdZho8wqkxF2U1hz9KLR9CLfmA13hyp8XjRhL4lry7imK5JC1sPXnjtCq0sbTqFAkk8EsW8SKiNRyXvmM57vZcBgy+KC21GrXQM3tRekfjzU3FHHIQNLZJ8ElsZlI0cpwJKJfzSRZqKQUc/2vTnfJ7yA9F5GOEJLQdRO2C7tzxyayWTbdaNLQv+fMbbol7c8ko4z3u2uyoRJvRRIXXmAwMiHRhb3tFB/joSnEab0xkGmE4mTtgcX9bxDG/9bZqcb8TDghgE9Wr5vRrldQnmoNh39XPuWMSs7nsReDmUX8pP3Kn5IZm54I36JdKBhzteP5Nr0atKkOm6AhfWKxZpAXDwHnVHkis0hu6Ur01zgN8DmW575YTSwSkl/oMC0Q1S6VvragcPgJkqRhJR4jP0INE4=
