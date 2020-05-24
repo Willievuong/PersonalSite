@@ -10,6 +10,7 @@ matrix:
     - npm test
     build:
     - npm run build
+    before_deploy: cd v1/client
     deploy:
       provider: firebase
       token:
