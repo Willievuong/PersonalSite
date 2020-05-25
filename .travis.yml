@@ -6,13 +6,9 @@ matrix:
     install:
     - cd v1/client
     - npm install
-  - stage: "Tests"
-    name: "Unit Tests"
-    scripts: npm test
-  - stage: "Build"
-    scripts: npm run build
-  - stage: "Deploy"
-    before_script: npm install -g firebase-tools
+    before_script: 
+    - npm run build
+    - npm install -g firebase-tools
     script:
     - firebase use default
     - firebase deploy --token "$FIREBASE_TOKEN" --non-interactive 
