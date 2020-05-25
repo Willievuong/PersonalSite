@@ -7,7 +7,7 @@ matrix:
     - cd v1/client
     - npm install
     before_script: 
-    - npm run build
+    - CI=false npm run build
     - npm install -g firebase-tools
     script:
     - firebase use default
