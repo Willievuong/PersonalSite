@@ -10,7 +10,7 @@ matrix:
     - npm test
     build:
     - npm run build
-    before_deploy: "ls"
+    before_deploy: firebase use default
     deploy:
       skip_cleanup: true
       provider: firebase
