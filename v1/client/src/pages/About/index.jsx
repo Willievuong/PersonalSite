@@ -15,7 +15,7 @@ function About(){
             <QueueAnim delay={200} interval={250} duration={1500}>
                 <div key="1">
                     <div>
-                        <Avatar src={face} alt="face" size={128} />
+                        <Avatar src={face} alt="face" size={128} style={{ borderRadius: "50%"}}/>
                     </div>
                     <div className="biography">
                         <p>

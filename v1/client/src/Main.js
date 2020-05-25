@@ -1,8 +1,6 @@
 import React from 'react';
 import {useSelector} from 'react-redux'
 import { Layout } from 'antd';
-import{ Link } from "react-router-dom";
-
 
 import Home from './pages/Home'
 import About from './pages/About';
