@@ -1,16 +1,31 @@
 .about{
-    margin: 0 25%;
+    margin: 0 10%;
     background-color: white;
     padding: 2% 5%; 
-    box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-  }
+}
+
+.avatar{
+  float: right;
+  width: 50%;
+  margin: 4% auto;
+}
+
+.face{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 80% 0%;
+  border-radius: 2px;
+}
   
-  .biography{
-    margin: 4% auto;
-    max-width: 32em; 
-  }
-  
-  .biography > p{
-    color: #314659;
-    margin: 0
+.biography{
+  text-align: left;
+  float: left;
+  width: 50%;
+  margin: 4% auto;
+}
+
+.biography > p{
+  color: #314659;
+  margin: 0
 }
