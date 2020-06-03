@@ -6,7 +6,7 @@ const {Footer} = Layout
 function FooterComp(){
 
     return(
-        <Footer style={{ textAlign: 'center' }}>Made with love from William</Footer>
+        <Footer style={{ textAlign: 'center' }}>Made with love from William ❤️</Footer>
     )
 }
 
