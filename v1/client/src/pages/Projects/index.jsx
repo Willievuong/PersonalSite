@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, Row, Col } from 'antd'
 
 import '../../App.css';
+import './style.css'
+import  stutter from '../../assets/stutter.jpg'
 
 import Typing from '../../components/Typing'
 
@@ -11,17 +13,14 @@ export default function Projects(){
     const fillerCards = [
         {   
             "id": 1,
-            "title": "Sample 1",
             "content": "Content of a Card"
         },
         {
             "id": 2,
-            "title": "Sample 2",
             "content": "Content of a Card"
         },
         {
             "id": 3,
-            "title": "Sample 3",
             "content": "Content of a Card"
         },
     ]
@@ -29,31 +28,40 @@ export default function Projects(){
     function cardBuilder(data){
         let { title, content } = data
         return(
-            <Col span={8}>
-                <Card className="projectCard" key={data.id} title={title}>
-                    <p>{content}</p>
-                </Card>
-            </Col>
+            <>
+                <Col span={12}>
+                    {/* <Card hoverable className="projectCard" cover={<img alt="stutter" src={stutter}/>}key={data.id} title={title}>
+                        <p>{content}</p>
+                    </Card> */}
+                    <img alt="stutter" src={stutter}/>
+                </Col>
+                <Col span={12}>
+                    Story about stutter
+                </Col>
+            </>
         )
     }
 
     return(
         <div className="page">
-            <div>
-                Projects
+            <div className="project">
+                <div style={{fontSize: "3em"}}>
+                    Projects
+                </div>
+
+                <div style={{fontSize: "2em", textAlign: "left"}}>
+                    A selection of a few of my projects
+                </div>
+
+                <div className="projectContent"> 
+                    <Row gutter={8}>
+                        {/* {fillerCards.map((data) => cardBuilder( data ))} */}
+                        {cardBuilder(fillerCards[0])}
+                        {cardBuilder(fillerCards[1])}
+                    </Row>
+                </div>
+
             </div>
-
-            <div>
-                <Typing strings={typeString}/>
-            </div>
-
-            <Row gutter={16}>
-                {fillerCards.map((data) => cardBuilder( data ))}
-            </Row>
-
-            <Row gutter={16}>
-                {fillerCards.map((data) => cardBuilder( data ))}
-            </Row>
         </div>
     )
 }
