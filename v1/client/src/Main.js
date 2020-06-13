@@ -43,7 +43,7 @@ function Main(){
     }
 
     return(
-        <Layout style={{height: '100%'}}>
+        <Layout style={{ minHeight: '100vh' }}>
             <SiderNav/>
             <Layout style={{background: '#f0f0f0'}}>
             <HeaderNav/>
