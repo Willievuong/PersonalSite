@@ -4,6 +4,7 @@ import { Card, Row, Col } from 'antd'
 
 import Typing from '../../components/Typing'
 import '../../App.css'
+import './style.css'
 
 
 function Notes(){
@@ -40,12 +41,12 @@ function Notes(){
 
 
     return(
-        <div className="page">
-            <div>
+        <div className="notes">
+            <div style={{fontSize: "3em"}}>
                 Notes    
             </div>
 
-            <div>
+            <div style={{fontSize: "2em", textAlign: "left"}}>
                 <Typing strings={typeString}/>
             </div>
 
