@@ -1,11 +1,13 @@
 import React from 'react';
-import { Card, Row, Col } from 'antd'
+import { Card, Row, Col, Collapse } from 'antd'
 
 import '../../App.css';
 import './style.css'
 import  stutter from '../../assets/stutter.jpg'
 
 import Typing from '../../components/Typing'
+
+const { Panel } = Collapse;
 
 export default function Projects(){
     const typeString = ["Whoops!", "I don't have anything cool to show yet!", "check back in a few weeks!"]
@@ -33,10 +35,24 @@ export default function Projects(){
                     {/* <Card hoverable className="projectCard" cover={<img alt="stutter" src={stutter}/>}key={data.id} title={title}>
                         <p>{content}</p>
                     </Card> */}
-                    <img alt="stutter" src={stutter}/>
+                    <img className="projectCard" alt="stutter" src={stutter}/>
                 </Col>
                 <Col span={12}>
-                    Story about stutter
+                    <div className="projectBody">
+                        <div className="projectBodyTitle">
+                            Stutter
+                        </div>
+                        <div className="projectBodyContent">
+                            Story about stutter
+                        </div>
+                        <Collapse bordered={false}>
+                            <Panel header="Built With">
+                                <p>
+                                    Information about the project here
+                                </p>
+                            </Panel>
+                        </Collapse>
+                    </div>
                 </Col>
             </>
         )
@@ -57,6 +73,8 @@ export default function Projects(){
                     <Row gutter={8}>
                         {/* {fillerCards.map((data) => cardBuilder( data ))} */}
                         {cardBuilder(fillerCards[0])}
+                        {cardBuilder(fillerCards[1])}
+                        {cardBuilder(fillerCards[1])}
                         {cardBuilder(fillerCards[1])}
                     </Row>
                 </div>
