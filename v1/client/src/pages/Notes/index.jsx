@@ -1,6 +1,5 @@
 import React from 'react'
-import { Button } from "antd";
-import { Card, Row, Col } from 'antd'
+import { Card, Col } from 'antd'
 
 import Typing from '../../components/Typing'
 import '../../App.css'

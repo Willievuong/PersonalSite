@@ -19,7 +19,7 @@ function WorkInProgressPage(){
         </div>
 
         <div style={{textAlign: "center"}}>
-            <img src={construction} style={{width: "25%", height: "auto"}}/>
+            <img alt="wip" src={construction} style={{width: "25%", height: "auto"}}/>
         </div>
     </div>
     );

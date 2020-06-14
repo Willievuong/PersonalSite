@@ -1,17 +1,13 @@
 import React from 'react';
-import { Card, Row, Col, Collapse } from 'antd'
+import { Row, Col, Collapse } from 'antd'
 
 import '../../App.css';
 import './style.css'
 import  stutter from '../../assets/stutter.jpg'
 
-import Typing from '../../components/Typing'
-
 const { Panel } = Collapse;
 
 export default function Projects(){
-    const typeString = ["Whoops!", "I don't have anything cool to show yet!", "check back in a few weeks!"]
-
     const fillerCards = [
         {   
             "id": 1,
@@ -28,7 +24,7 @@ export default function Projects(){
     ]
 
     function cardBuilder(data){
-        let { title, content } = data
+        // let { title, content } = data
         return(
             <>
                 <Col span={12}>

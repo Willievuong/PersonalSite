@@ -7,16 +7,15 @@ import {
 
 import './App.css';
 import Main from './Main'
-import ErrorPage from './pages/404'
-
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/'>
+        <Route exact path="/">
           <Main/>
         </Route>
+        <Route path="/:page" children={<Main/>} />          
       </Switch>
     </Router>
   );

@@ -1,10 +1,7 @@
 import { SET_SCREEN} from '../actionTypes'
 
-const initialState = {
-    screenKey: "1"
-}
 
-export default function(state = initialState, action){
+export default function(state, action){
     switch(action.type){
         case SET_SCREEN:
             const { screenKey } = action.payload

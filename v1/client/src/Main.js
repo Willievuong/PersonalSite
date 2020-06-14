@@ -2,6 +2,10 @@ import React from 'react';
 import {useSelector} from 'react-redux'
 import { Layout } from 'antd';
 
+import {
+    useParams
+  } from "react-router-dom";
+
 import Home from './pages/Home'
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -16,25 +20,30 @@ import Footer from './components/Footer'
 const { Content } = Layout
 
 function Main(){
-    const screenKey = useSelector(state => state.setScreenReducer.screenKey)
+    let {page} = useParams()
+    
+    if(page === undefined){
+        page = "/"
+    }
 
     const renderPage = (key) => {
         switch(key){
-            case "1":
+            case "/":
                 return <Home/>
 
-            case "2":
+            case "about":
                 return <About/>
-            case "3":
+                
+            case "projects":
                 return <Projects/>
 
-            case "4":
+            case "notes":
                 return <Notes/>
 
-            case "5":
+            case "weather":
                 return <WorkInProgress/>
 
-            case "6":
+            case "contact":
                 return <Contact/>
 
             default: 
@@ -44,11 +53,11 @@ function Main(){
 
     return(
         <Layout style={{ minHeight: '100vh' }}>
-            <SiderNav/>
+            <SiderNav currentPage={page}/>
             <Layout style={{background: '#f0f0f0'}}>
             <HeaderNav/>
             <Content className="content">        
-                {renderPage(screenKey)}
+                {renderPage(page)}
             </Content>
             <Footer style={{background: 'none'}}/>
             </Layout>

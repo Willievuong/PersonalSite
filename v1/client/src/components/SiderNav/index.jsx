@@ -16,8 +16,9 @@ import {setScreen} from '../../redux/actions'
 
 const { Sider } = Layout;
 
-function SiderNav(){
+function SiderNav(props){
     const dispatch = useDispatch()
+    let currentPage = props.currentPage
 
     function handleClick(e){
       dispatch(setScreen(e.key))
@@ -35,38 +36,38 @@ function SiderNav(){
       }}
     >
       <div className="logo"/>
-      <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} onClick={handleClick}>
-        <Menu.Item key="1">
+      <Menu theme="dark" mode="inline" defaultSelectedKeys={currentPage} onClick={handleClick}>
+        <Menu.Item key="/">
           <Link to="/">
             <HomeOutlined/>
             <span className="nav-text">Home</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="about">
           <Link to="/about">
             <UserOutlined/>
             <span className="nav-text">About</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="3">
+        <Menu.Item key="projects">
           <Link to="/projects">
             <DatabaseOutlined/>
             <span className="nav-text">Projects</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="4">
+        <Menu.Item key="notes">
           <Link to="/notes">
             <ReadOutlined/>
             <span className="nav-text">Notes</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="5">
-          <Link to="/wip">
+        <Menu.Item key="weather">
+          <Link to="/weather">
             <ThunderboltOutlined/>
             <span className="nav-text">Weather</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="6">
+        <Menu.Item key="contact">
           <Link to="/contact">
             <MailOutlined/>
             <span className="nav-text">Contact</span>
