@@ -1,8 +1,7 @@
 import React from 'react';
 import { Layout } from "antd";
 
-
-import './style.css';
+import './style.css'
 
 const { Header } = Layout;
 

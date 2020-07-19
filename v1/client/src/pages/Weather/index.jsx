@@ -1,6 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 
+import '../../App.css';
 import './style.css'
 
 //TODO: To be a template for all the notes

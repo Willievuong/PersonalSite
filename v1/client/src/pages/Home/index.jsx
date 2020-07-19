@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button } from "antd";
 import Terminal from '../../components/Terminal'
-import '../../App.css'
+
+import '../../App.css';
 import './style.css'
 
 
@@ -11,7 +12,7 @@ function Home(){
     const typeString = ["Hi", "Hey", "Hello!", "I'm William,", "nice to meet you ;)", "Lets Chat Over Coffee!"]
     
     return(
-        <div className="page">
+        <div>
             <Terminal typeString={typeString}/>
 
             <Button

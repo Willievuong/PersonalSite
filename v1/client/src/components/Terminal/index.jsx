@@ -2,9 +2,11 @@ import React from 'react'
 import { PlusSquareOutlined, SearchOutlined, LineOutlined, MenuOutlined, CloseCircleFilled, SwitcherOutlined
   } 
   from '@ant-design/icons'
-
-import './style.css'
 import Typing from '../Typing'
+
+import '../../App.css';
+import './style.css'
+
 
 function Terminal(props){
     

@@ -2,14 +2,14 @@ import React from 'react'
 import {LinkedinOutlined, GithubOutlined, MailOutlined} from '@ant-design/icons'
 
 import '../../App.css';
+import './style.css'
 import Terminal from '../../components/Terminal'
 
 export default function Contact(){
     const typeString = ["Seems like you want to contact me", "well, here's a few way for you to do so!"]
 
     return(
-        <div className="page">
-            
+        <div>            
             <Terminal typeString={typeString}/>
             
             <div className="iconRow">

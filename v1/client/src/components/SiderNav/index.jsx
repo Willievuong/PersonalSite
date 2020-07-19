@@ -9,10 +9,12 @@ import {
   ThunderboltOutlined 
   } from '@ant-design/icons'
 
-import {useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import{ Link } from "react-router-dom";
+import { setScreen } from '../../redux/actions'
 
-import {setScreen} from '../../redux/actions'
+import '../../App.css';
+import './style.css'
 
 const { Sider } = Layout;
 

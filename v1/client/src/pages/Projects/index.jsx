@@ -55,27 +55,26 @@ export default function Projects(){
     }
 
     return(
-        <div className="page">
-            <div className="project">
-                <div style={{fontSize: "3em"}}>
-                    Projects
-                </div>
-
-                <div style={{fontSize: "2em", textAlign: "left"}}>
-                    A selection of a few of my projects
-                </div>
-
-                <div className="projectContent"> 
-                    <Row gutter={8}>
-                        {/* {fillerCards.map((data) => cardBuilder( data ))} */}
-                        {cardBuilder(fillerCards[0])}
-                        {cardBuilder(fillerCards[1])}
-                        {cardBuilder(fillerCards[1])}
-                        {cardBuilder(fillerCards[1])}
-                    </Row>
-                </div>
-
+        <div className="project">
+            <div style={{fontSize: "3em"}}>
+                Projects
             </div>
+
+            <div style={{fontSize: "2em", textAlign: "left"}}>
+                A selection of a few of my projects
+            </div>
+
+            <div className="projectContent"> 
+                <Row gutter={8}>
+                    {/* {fillerCards.map((data) => cardBuilder( data ))} */}
+                    {cardBuilder(fillerCards[0])}
+                    {cardBuilder(fillerCards[1])}
+                    {cardBuilder(fillerCards[1])}
+                    {cardBuilder(fillerCards[1])}
+                </Row>
+            </div>
+
         </div>
+
     )
 }
