@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col, Collapse } from 'antd'
+import { Row, Col, Collapse, Button } from 'antd'
+import { LinkOutlined } from '@ant-design/icons';
 
 import '../../App.css';
 import './style.css'
@@ -7,19 +8,43 @@ import  stutter from '../../assets/stutter.jpg'
 
 const { Panel } = Collapse;
 
+
 export default function Projects(){
     const fillerCards = [
         {   
+            "id": 0,
+            "title": "ConnectNGive",
+            "content": "An CoronaVirus PPE Donation Distibution App",
+            "builtWith": "Information About Project: React, Django",
+            "website": "https://www.connectngive.org/"
+        },
+        {   
             "id": 1,
-            "content": "Content of a Card"
+            "title": "Wistly",
+            "content": "An general delivery mobile app",
+            "builtWith": "Information About Project: React, Django",
+            "website": "https://wistly.io/"
         },
         {
             "id": 2,
-            "content": "Content of a Card"
+            "title": "InfoPost",
+            "content": "An news aggregrator that verifies the sources and rate its trustworthiness",
+            "builtWith": "Information About Project: React, Django",
+            "website": "https://theinfopost.com/"
         },
         {
             "id": 3,
-            "content": "Content of a Card"
+            "title": "Stutter",
+            "content": "An web application that transcribes an interviewee and analyze the response",
+            "builtWith": "Information About Project: React, Django",
+            "website": "https://devpost.com/software/stutter"
+        },
+        {
+            "id": 4,
+            "title": "Roomm8",
+            "content": "An roommate management application",
+            "builtWith": "Information About Project: React, Django",
+            "website": "https://github.com/Willievuong/roomm8"
         },
     ]
 
@@ -36,16 +61,23 @@ export default function Projects(){
                 <Col span={12}>
                     <div className="projectBody">
                         <div className="projectBodyTitle">
-                            Stutter
+                            {data.title}
                         </div>
                         <div className="projectBodyContent">
-                            Story about stutter
+                            {data.content}
                         </div>
                         <Collapse bordered={false}>
-                            <Panel header="Built With">
+                            <Panel className="projectPanel"header="Learn More">
                                 <p>
-                                    Information about the project here
+                                    {data.builtWith}
                                 </p>
+                                <Button type="primary" 
+                                    icon={<LinkOutlined />} 
+                                    size={"large"} 
+                                    onClick={ () => window.open(data.website, "_blank")}
+                                >
+                                        View Site
+                                </Button>
                             </Panel>
                         </Collapse>
                     </div>
@@ -66,11 +98,7 @@ export default function Projects(){
 
             <div className="projectContent"> 
                 <Row gutter={8}>
-                    {/* {fillerCards.map((data) => cardBuilder( data ))} */}
-                    {cardBuilder(fillerCards[0])}
-                    {cardBuilder(fillerCards[1])}
-                    {cardBuilder(fillerCards[1])}
-                    {cardBuilder(fillerCards[1])}
+                    {fillerCards.map((data) => cardBuilder( data ))}
                 </Row>
             </div>
 

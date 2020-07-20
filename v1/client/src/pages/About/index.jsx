@@ -22,10 +22,11 @@ function About(){
                 </div>
                 <div key="1" className="biography">
                     <p>
-                        I'm <b>William Vuong</b>, currently I am the lead app developer at 
-                        <a href="https://theinfopost.com/"> Infopost </a> 
-                        and co-Founder at 
+                        I'm <b>William Vuong</b>, currently I am the co-Founder at 
                         <a href="https://wistly.io/"> Wistly. </a> 
+                        and former lead app developer at
+
+                        <a href="https://theinfopost.com/"> Infopost </a> 
                         Currently I reside in San Diego, but I consider home to be San Jose. 
                         Prior to working at Infopost and Wistly, I studied 
                         Mathematics Computer Science, a multi-disciplinary major at 

@@ -14,15 +14,19 @@
 
 .projectBody{
     text-align: left;
-    margin: 4% auto;
+    margin: 10% auto 5% auto;
     padding-left: 4%;
     padding-right: 4%;
 }
 
 .projectBodyTitle{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .projectBodyContent{
     padding-bottom: 3%;
+}
+
+.projectPanel > span {
+    padding: 5px;
 }
