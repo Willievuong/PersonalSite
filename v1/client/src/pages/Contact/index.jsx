@@ -14,13 +14,13 @@ export default function Contact(){
             
             <div className="iconRow">
                 <a href="https://www.linkedin.com/in/vuongwilliam/">
-                    <LinkedinOutlined/>
+                    <LinkedinOutlined className="contactIcon"/>
                 </a>
                 <a href="https://github.com/willievuong">
-                    <GithubOutlined/>
+                    <GithubOutlined className="contactIcon"/>
                 </a>
                 <a href="mailto:willievuong@gmail.com">
-                    <MailOutlined/>
+                    <MailOutlined className="contactIcon"/>
                 </a>
             </div>
     
