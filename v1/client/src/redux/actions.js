@@ -38,15 +38,22 @@ export const fetchWeather = (weather) => {
         
         dispatch(requestWeather(weather))
         
-        let response
-        try{    
-            response = await axios.get("https://api.weather.gov/gridpoints/SGX/54,21/forecast/hourly")
-        }catch(error){
-            console.error(error)
-        } 
 
-        let data = response.data
-        dispatch(receiveWeather(weather, data))
+        //TODO: Fix Weather report
+        // let response
+        // try{    
+        //     response = await axios.get("https://api.weather.gov/gridpoints/SGX/54,21/forecast/hourly")
+        // }catch(error){
+        //     console.error(error)
+        // } 
+        
+
+        // if(typeof(response.data) === "undefined"){ 
+        //     invalidateWeather(response)
+        // }else{
+        //     let data = response.data
+        //     dispatch(receiveWeather(weather, data))
+        // }
     }
 
 } 

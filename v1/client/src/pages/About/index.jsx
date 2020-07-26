@@ -1,6 +1,5 @@
 import React from 'react'; 
 import QueueAnim from "rc-queue-anim";
-import {useDispatch} from 'react-redux'
 
 import '../../App.css';
 import './style.css'
@@ -49,7 +48,7 @@ function About(){
                     </p>
                 </div>
             </QueueAnim>
-            </div>
+        </div>
 
     );
 }

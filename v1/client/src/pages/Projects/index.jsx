@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Collapse, Button } from 'antd'
 import { LinkOutlined } from '@ant-design/icons';
+import QueueAnim from "rc-queue-anim";
 
 import '../../App.css';
 import './style.css'
@@ -61,31 +62,35 @@ export default function Projects(){
         return(
             <>
                 <Col span={12}>
-                    <img className="projectCard" alt={data.title} src={data.image}/>
+                    <QueueAnim delay={700} interval={500} duration={1500}>
+                        <img key="1" className="projectCard" alt={data.title} src={data.image}/>
+                    </QueueAnim>
                 </Col>
                 <Col span={12}>
-                    <div className="projectBody">
-                        <div className="projectBodyTitle">
-                            {data.title}
+                    <QueueAnim delay={900} interval={700} duration={1500}>
+                        <div key="1" className="projectBody">
+                            <div className="projectBodyTitle">
+                                {data.title}
+                            </div>
+                            <div className="projectBodyContent">
+                                {data.content}
+                            </div>
+                            <Collapse bordered={false}>
+                                <Panel className="projectPanel"header="Learn More">
+                                    <p>
+                                        {data.builtWith}
+                                    </p>
+                                    <Button type="primary" 
+                                        icon={<LinkOutlined />} 
+                                        size={"large"} 
+                                        onClick={ () => window.open(data.website, "_blank")}
+                                    >
+                                            View Site
+                                    </Button>
+                                </Panel>
+                            </Collapse>
                         </div>
-                        <div className="projectBodyContent">
-                            {data.content}
-                        </div>
-                        <Collapse bordered={false}>
-                            <Panel className="projectPanel"header="Learn More">
-                                <p>
-                                    {data.builtWith}
-                                </p>
-                                <Button type="primary" 
-                                    icon={<LinkOutlined />} 
-                                    size={"large"} 
-                                    onClick={ () => window.open(data.website, "_blank")}
-                                >
-                                        View Site
-                                </Button>
-                            </Panel>
-                        </Collapse>
-                    </div>
+                    </QueueAnim>
                 </Col>
             </>
         )
@@ -93,20 +98,21 @@ export default function Projects(){
 
     return(
         <div className="project">
-            <div style={{fontSize: "3em"}}>
-                Projects
-            </div>
+            <QueueAnim delay={200} interval={300} duration={1500}>
+                <div key="1" style={{fontSize: "3em"}}>
+                    Projects
+                </div>
 
-            <div style={{fontSize: "2em", textAlign: "left"}}>
-                A selection of a few of my projects
-            </div>
+                <div key="2" style={{fontSize: "2em", textAlign: "left", marginBottom: "3%"}}>
+                    A selection of a few of my projects
+                </div>
 
-            <div className="projectContent"> 
-                <Row gutter={8}>
-                    {fillerCards.map((data) => cardBuilder( data ))}
-                </Row>
-            </div>
-
+                <div className="projectContent"> 
+                    <Row gutter={8}>
+                        {fillerCards.map((data) => cardBuilder( data ))}
+                    </Row>
+                </div>
+            </QueueAnim>
         </div>
 
     )

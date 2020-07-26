@@ -1,7 +1,8 @@
 .project{
-    margin: 0 10%;
+    margin: 0 4%;
     background-color: white;
-    padding: 2% 5%; 
+    padding: 2% 5%;
+    min-height: 2000px;
 }
 
 .projectCard{
@@ -16,7 +17,7 @@
 
 .projectBody{
     text-align: left;
-    margin: 10% auto 5% auto;
+    margin: 7% auto 0 auto;
     padding-left: 4%;
     padding-right: 4%;
 }
